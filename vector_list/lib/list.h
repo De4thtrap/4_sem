@@ -3,12 +3,12 @@
 
 #define INIT_CAPACITY 8
 
-typedef struct vector
+typedef struct list
 {
     box methods;
     int capacity;
     int size;
     data_t* data;
-} vector;
+} list;
 
-box* vector_create();
+box* list_create();
